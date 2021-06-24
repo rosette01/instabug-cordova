@@ -34,6 +34,9 @@ buildscript {
 // Allow plugins to declare Maven dependencies via build-extras.gradle.
 allprojects {
     repositories {
+        maven {
+            url "https://sdks.instabug.com/nexus/repository/instabug-cp"
+        }
         mavenCentral()
         jcenter()
     }
@@ -179,7 +182,7 @@ android {
       abortOnError false;
     }
 
-    compileSdkVersion cdvCompileSdkVersion
+    compileSdkVersion 29
     buildToolsVersion cdvBuildToolsVersion
 
     // This code exists for Crosswalk and other Native APIs.
