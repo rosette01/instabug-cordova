@@ -19,7 +19,7 @@ public class MyApplication extends MultiDexApplication
     {
         new Instabug.Builder(
                 this,
-                "com.outsystemscloud.rosettesantos.Events",
+                "sg.com.dreamcloud.dev.Events",
                 InstabugInvocationEvent.SHAKE
         ).build();
         BugReporting.setFloatingButtonEdge(InstabugFloatingButtonEdge.LEFT);
